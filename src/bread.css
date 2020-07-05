@@ -1,0 +1,59 @@
+
+.cont_principal {
+    position: sticky;
+    width: 100%;
+    
+  
+  } 
+  
+  .cont_breadcrumbs {
+  
+  }
+  
+  
+  
+  
+  
+  
+  .cont_breadcrumbs_3 {
+    position: sticky;
+    float: left;
+    margin: 40px 10px;
+    height: 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc',GradientType=0 );
+  width: 350px;
+  }
+  
+  .cont_breadcrumbs_3 > ul > li {
+    position: sticky;
+    float: left;
+    transform: skewX(-15deg);  
+    background-color: #fff;
+  z-index: 1;
+  transition: all 0.5s;
+  margin-left: 5px;
+  list-style-type: none;
+  }
+  
+  .cont_breadcrumbs_3 > ul > li:hover {
+   background-color: #CFD8DC;
+  }
+  
+  .cont_breadcrumbs_3 > ul > li  > a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+   transform: skewX(15deg);
+   text-decoration:none;
+   color: #444;
+  font-weight: 300;
+  }
+  .cont_breadcrumbs_3 > ul > li:last-child {
+    background-color: #78909C;
+  }
+  
+  .cont_breadcrumbs_3 > ul > li:last-child > a {
+    color: #fff; 
+  
+  }
+   
