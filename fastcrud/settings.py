@@ -25,7 +25,7 @@ SECRET_KEY = '@6u#klanr!$ui1-@ngnc35d)b0j+wkwr-!($legprr*+bvkkv^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['reactango-api-crud.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['reactango-api-crud.herokuapp.com', 'localhost', '127.0.0.1','https://djangoreacts.herokuapp.com/']
 
 
 # Application definition
