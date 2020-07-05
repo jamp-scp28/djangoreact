@@ -40,7 +40,7 @@
     "eject": "react-scripts eject",
     "postinstall": "npm run build"
   },
-  "_comment": "https://reactango-api-crud.herokuapp.com/",
+  "_comment": "https://djangoreacts.herokuapp.com/",
   "proxy": "http://localhost:8000/",
   "engines": {
     "node": "11.10.0",

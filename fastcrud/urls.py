@@ -40,7 +40,7 @@ urlpatterns = [
     path('weather_api/', WeatherApi.as_view(), name="weather_api"),
     path('images_api/', ImagesApi.as_view(), name="images_api"),
     ###  ENABLE  FOR HEROKU DEPLOY 
-    #re_path('.*', TemplateView.as_view(template_name="index.html"), name="home")
+    re_path('.*', TemplateView.as_view(template_name="index.html"), name="home")
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
