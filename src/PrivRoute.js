@@ -45,10 +45,6 @@ const PrivRoute = ({
 
                 }
                 
-
-
-
-                
         />
     );
 }

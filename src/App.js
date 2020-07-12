@@ -7,9 +7,13 @@ import Login from './pages/Login'
 import Home from './pages/Home'
 import Locations from './pages/Locations'
 import Dashboard from './pages/Dashboard'
+import Index from "./views/Index"
+import Login1 from "./views/examples/Login"
 //import Test from './pages/Test';
 import PrivRoute from './PrivRoute'
-
+import Navi from './layouts/Admin'
+import PrivateRoute from "./components/common/PrivateRoute";
+import AdminLayout from "./layouts/Admin.js";
 
 const hist = createBrowserHistory();
 
@@ -20,8 +24,6 @@ export default class App extends Component {
     this.state = {
        authenticated: false
     }
-
-  
   }
   
   render() {
@@ -30,10 +32,12 @@ export default class App extends Component {
         <Switch>
            <Route exact path="/login" component={Login} />
            <Route exact path="/" component={Home} />
-           <PrivRoute exact path="/dashboard" component={Dashboard} />
+           <PrivRoute exact path="/dashboard/ind" component={Dashboard} />
            <PrivRoute exact path="/list" component={List} />
            <PrivRoute exact path="/locations" component={Locations} />
-           
+           <PrivRoute exact path="/" component={Navi} />
+           <PrivRoute exact path="/user" component={Navi} />
+           <Route path="/" render={props => <AdminLayout {...props} />} />           
         </Switch>
     </Router>
       

@@ -23,6 +23,7 @@ const pageStyle = {
 
 export default class Dashboard extends Component {
   constructor(props) {
+
     super(props)
   
     this.state = {
@@ -47,18 +48,19 @@ export default class Dashboard extends Component {
 
   async componentDidMount() {
 
+
     //const {coord, hotLocation} = this.state
 
-    //console.log("CARGANDO")
+    console.log("CARGANDO")
     this.setState({ loading: true })
     await queryservice.getProducts()
       .then( result => {
-          //console.log(result, 'result con axios')
+          //console.log(result.data, 'result con axios')
           this.setState({list: result.data})
           //console.log(this.state.products, 'prduct state con axios')          
       })
       .catch(error => {
-          console.log(error, 'estructura del error')
+          //console.log(error, 'Error Structure')
           this.setState({ error: error });
       })
     
@@ -135,7 +137,7 @@ export default class Dashboard extends Component {
   render() {
     
     const { hotLocation, list, average, totQuanty,  loading, coord } = this.state
-    //console.log(list, list.length,'ESTA ES LA LISTA')
+    console.log(list, list.length,'data')
     //console.log(hotLocation, "hotLocations")
     //console.log(coord, "show COORDS")
     

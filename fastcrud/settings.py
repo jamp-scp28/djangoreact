@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #apps
     'simplecrud',
+    'health',
     ##for develop
     'django_extensions',
     'rest_framework',

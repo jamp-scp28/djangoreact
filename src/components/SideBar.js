@@ -15,8 +15,6 @@ const SideBar = (props) => {
     const [isExpanded, expande] = useState(false)
 
     
-
-
     return (
         <SideNav
             onSelect={(selected) => {

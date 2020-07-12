@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Header from '../layout/Header'
+import Header1 from '../layout/Header'
 import { Modal, Alert, Button, Row, Fade, Spinner } from 'react-bootstrap';
 import CustomBreadCumb from '../components/CustomBreadCumb'
 import Swal from 'sweetalert2'
@@ -9,6 +9,7 @@ import Modalcont from '../components/Modalcont'
 import QueryService from '../services/QueryService';
 import SideBar from '../components/SideBar';
 import { FaRegPlusSquare, FaTags } from 'react-icons/fa'
+import Header from '../components/Headers/Header'
 //import Spinner from '../components/Spinner';
 
 const queryservice = new QueryService()
@@ -328,9 +329,10 @@ export default class List extends PureComponent {
         transition: 'background-color .35s cubic-bezier(.4, 0, .2, 1)'
 
       }}>
-        <Header brand={nameapp} alerts={MySwal} />
+        {/* <Header1 brand={nameapp} alerts={MySwal} /> */}
+        <Header />
         <div id="content-wrapper"  >
-          <SideBar handleSideBarToggle={this.handleSideBarToggle} />
+          {/* <SideBar handleSideBarToggle={this.handleSideBarToggle} /> */}
           <div className="container-fluid mt-2"
             style={
               this.state.sidebar ?

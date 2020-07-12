@@ -32,6 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', TemplateView.as_view(template_name="home.html"), name="home"),
     path('app/', include(('simplecrud.urls', 'simplecrud'), namespace='app')),
+    path('app1/', include(('health.urls', 'health'), namespace='app1')),
     #path('app0', include(('app0.urls', 'app0'), namespace='app0')),
     path('api/v1/', include(router.urls)),
     path('api-token-auth/', TokenObtainPairView.as_view(), name='api_token_auth'),

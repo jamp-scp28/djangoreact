@@ -1,8 +1,6 @@
 import React from 'react'
 import { Form, Col, InputGroup, Button } from 'react-bootstrap';
 import MyUploader from '../components/MyUploader';
-import Select from 'react-select'
-import RFReactSelect from './reactSel'
 import { Typeahead } from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { Formik, Field, FieldArray } from 'formik'

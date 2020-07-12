@@ -105,6 +105,7 @@ const Tables = (props) => {
               <td>{product.price}</td>
               <td>{product.observation}</td>
               <td>{product.deployDate}</td>
+              <td>{product.location}</td>
               
               <td>
               <Button className="mr-2 " variant="info" onClick={() => 
