@@ -4,7 +4,7 @@
 
 # FullStack Django-React Web Application (Not longer maintained)
 
-Web application develop to handle examns and follow-ups of Covid19 cases. 
+Web application develop to handle examns and follow-ups of Covid19 cases (originally forked from alenq1).
 
 Author
 --------
